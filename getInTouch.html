@@ -1,76 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CFG Interiors</title>
+  <title>CFG Interiors get in touch</title>
     <link rel="stylesheet" type="text/css" href="css/getInTouch.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link href="https://fonts.googleapis.com/css?family=Monoton|Yellowtail&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Homemade+Apple|Permanent+Marker|Nunito&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="CFG course project Interior Design Service Website">
+    <meta name="author" content="SandyFLdn">
+    <meta name="keywords" content="Interior design, London, UK, diy, budget, renovation, property developer, decorate">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <body>
 
     <header>
-        <h1 class="banner">
-            CF:G Interiors
-        </h1>
+
+        <a href="index.html"><h1 class="banner">
+        CF:G Interiors
+        </h1></a>
         <h2 class="tagline">
-            Make your home your heaven...
+          CLEVER LIVING
         </h2>
 
         <nav>
             <ul class="navbar">
                 <li class="navbarli"><a href="index.html">Home</a></li>
                 <li class="navbarli"><a href="whoarewe.html">Who are we?</a></li>
-                <li class="navbarli"><a href="getintouch.html">Get in touch</a></li>
-                <li class="navbarli" style="float:right"><a class="active" href="#cart"><i class='fas fa-cart-arrow-down' style='font-size:24px'></i> Cart</a></li>
+                <li class="navbarli"><a class="activeMenu" href="getintouch.html">Get in touch</a></li>
+                <li class="navbarli" style="float:right"><a class="active"><i class="fas fa-search" style='font: size 1.5rem'></i><input class="search" type="text" placeholder="search..."></a></li>
             </ul>
         </nav>
         
     </header>
 
 
+
     <main>
-        <br>
+    <div class="formContainer">
+      <div class="formIntro">
+      <h1>We are excited to hear about your project!
+        <br><br>
+        Fill in your details and leave us a message. We will be in touch shortly!</h1>
+      </div>
+      <br><br><br><br>
+    
+      <div class="flexbox">
+        <div class="formBox">
+          <form>
+            <label for="first name">First name:</label>
+            <br>
+            <input class="txInputs" type="text" id="first name" placeholder="First name..." required>  
+            <br><br>
+            <label for="surname">Surname:</label>
+            <br>
+            <input class="txInputs" type="text" id="surname" placeholder="Surname..." required>
+            <br><br>
+            <label for="email">Email:</label>
+            <br>
+            <input class="txInputs" type="email" id="email" placeholder="Email..." required>
 
-        <!-- form -->
-        <div class="container2">  
-            <form id="contact" action="" method="post">
-              <h3>Beautiful homes start here!</h3>
-              <h4>What can we do for you today?</h4>
-              <fieldset>
-                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-              </fieldset>
-              <fieldset>
-                <input placeholder="Your Email Address" type="email" tabindex="2" required>
-              </fieldset>
-              <fieldset>
-                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-              </fieldset>
-              <fieldset>
-                <input placeholder="How many rooms?" type="url" tabindex="4">
-              </fieldset>
-              <fieldset>
-                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-              </fieldset>
-              <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-              </fieldset>
-            </form>
-           
-            
+            <br><br>
+
+            <span>Select rooms needing work:</span>
+            <div class="roomBorder">
+             <span class="whiteSpace"> 
+              <input type="checkbox" name="room1" value="living room">
+              <label for="living room">Living Room</label>
+             </span> 
+             <span class="whiteSpace">
+              <input type="checkbox" name="room2" value="bedroom" id="room">
+              <label for="bedroom">Bedroom</label>
+             </span>
+              <span class="whiteSpace"> 
+              <input type="checkbox" name="room3" value="bathroom">
+              <label for="bathroom">Bathroom</label>
+             </span>
+              <span class="whiteSpace"> 
+              <input type="checkbox" name="room4" value="kitchen">
+              <label for="kitchen">Kitchen</label>
+              </span>
+              <br><br>
+            <input type="checkbox" name="room5" value="other">
+            <label for="other">Other</label>
+            <input class="txInputs" type="text" id="other room" placeholder="specify other...">
+            </div>
+
+            <br>
+
+            <label for="budget">Budget range:</label>
+            <select name="minBudget" id="minBudget">
+              <option value="minBudget">Min budget?</option>
+              <option value="min0">no min</option>
+              <option value="min500">£500</option>
+              <option value="min1000">£1000</option>
+              <option value="min2000">£2000</option>
+              <option value="min4000">£4000+</option>
+            </select>
+            <select name="maxBudget" id="maxBudget">
+              <option value="maxBudget">Max budget?</option>
+              <option value="maxNo">no max</option>
+              <option value="max500">£500</option>
+              <option value="max1000">£1000</option>
+              <option value="max2000">£2000</option>
+              <option value="max4000">£4000</option>
+            </select>
+
+            <br><br><br>
+
+            <label for="note">Anymore queries? Leave a note:</label>
+            <br>
+            <textarea class="txInputs" name="note" id="note" cols="30" rows="10" placeholder="Leave a note here..."></textarea>
+
+            <br><br>
+
+            <input type="submit" value="send">
+          </form>
+        </div>
+
+        <div class="polaroid">
+          <img src="img/tradational_hut.jpg" alt="Traditional rondavel round hut, Zimbabwe" style="width:100%">
+          <div class="container">
+              <p>Traditional rondavel round hut,
+                <br> 
+                Zimbabwe</p>
           </div>
-          <!-- /form -->
-
-
+        </div>
+      </div>
+    </div>
     </main>
+
+<br><br><br><br>
+
+
     <footer>
+      <div class="social">
         <!-- Social media icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <!-- Add font awesome icons -->
         <a href="#" class="fa fa-facebook" style='font-size:18px'></a>
         <a href="#" class="fa fa-twitter" style='font-size:18px'></a>
         <a href="#" class="fa fa-instagram" style='font-size:18px'></a>
-
+      </div>  
+      <br>
+      <medium>&copy; Copyright 2020, CF:G Interiors</medium>
+      <br>
+      <medium>Site created by SandyF</medium>
 
     </footer>
 </body>
