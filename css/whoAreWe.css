@@ -28,8 +28,8 @@ body {
     letter-spacing: 0.5em;
     margin: 0px 10px -10px 10px;
     padding: 0px 20px;
-    font-family: 'Monoton';
-    font-size: 50px;
+    font-family: 'Monoton'
+    font-size: 4vw;
     color: #f1a9a0;
     background-color: #333;
 }
@@ -42,7 +42,7 @@ body {
     margin: 0px 10px -10px 10px;
     padding: 0px 10px 20px 10px;
     font-family: 'Homemade Apple', cursive;
-    font-size: 230%;
+    font-size: 1.8vw;
     color: #f1a9a0;
     background-color: #333;
 }
