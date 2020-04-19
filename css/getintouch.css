@@ -83,6 +83,38 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 600px) {
+    .banner {
+        font-size: 5vw;
+    }
+    .tagline {
+        font-size: 2VW;
+    }
+    .navbarli a {
+        font-size: 2.5VW;
+        padding: 7px 8px;
+    }    
+}
+
+@media screen and (max-width: 450px) {
+    .banner {
+        font-size: 4.3vw;
+        margin: 0px 10px -1px 10px;
+
+    }
+    .tagline {
+        display: none;
+    }
+    .navbarli a {
+        font-size: 3.4VW;
+        padding: 1px 8px;
+    }
+    .search {
+        display: none;
+    }
+}
+
+
 /* Form below*/
 
 .formContainer {
