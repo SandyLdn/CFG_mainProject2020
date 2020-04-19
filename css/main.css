@@ -113,7 +113,7 @@ li a:hover:not(.activeMenu) {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .banner {
         font-size: 4.3vw;
     }
