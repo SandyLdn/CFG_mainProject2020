@@ -100,6 +100,8 @@ li a:hover:not(.activeMenu) {
     margin-left: 5px;
 }
 
+/* media queries */
+
 @media screen and (max-width: 600px) {
     .banner {
         font-size: 5vw;
@@ -128,6 +130,9 @@ li a:hover:not(.activeMenu) {
     }
     .search {
         display: none;
+    }
+    .gallery-item {
+        max-width: 45%;
     }
 }
 
