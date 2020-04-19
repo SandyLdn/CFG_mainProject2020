@@ -114,7 +114,7 @@ li a:hover:not(.activeMenu) {
         padding: 7px 8px;
     }
     .gallery-item {
-        flex: 50%;
+        flex: 40%;
     }
     
 }
