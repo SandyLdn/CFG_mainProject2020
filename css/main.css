@@ -116,6 +116,8 @@ li a:hover:not(.activeMenu) {
 @media screen and (max-width: 450px) {
     .banner {
         font-size: 4.3vw;
+        margin: 0px 2px 0px 2px;
+
     }
     .tagline {
         display: none;
